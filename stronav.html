@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BURTZUM</title>
     <style>
+        img{
+            border-radius: 40px;
+            border: 5px dashed wheat;
+        }
         body {
         
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('tlo_jpg.jpg');
@@ -15,13 +19,32 @@
             margin: 0;
           
         }
-        h3{
+        h2{
             color: white;
         }
+            .cbtekst {
+  font-weight: bold;
+  animation: cbtekst 3s infinite;
+}
+
+@keyframes cbtekst {
+  0%   { color: black; }
+  33%  { color: gray; }
+  66%  { color: wheat; }
+  100% { color: black; }
+}
+
+    a{
+        color: wheat;
+    }
     </style>
 </head>
 <body>
-    <img src="vv.jpg" alt="">
-    <h3>Varg Vikerness za pomocą pieniędzy pozyskanych z szeroko pojętej działalności muzycznej postanowił wesprzeć działalność koła ultrasonograficznego swoją sprawną ręką.</h3>
+    
+    <img src="vv.jpg" alt="varg vikerness">
+    <article class="cbtekst">
+    <h2>Varg Vikerness za pomocą pieniędzy pozyskanych z szeroko pojętej działalności muzycznej postanowił wesprzeć działalność koła ultrasonograficznego swoją sprawną ręką.</h2>
+    </article>
+    <a href="index.html">GŁÓWNA</a>
 </body>
 </html>
