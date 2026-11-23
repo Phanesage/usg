@@ -1,0 +1,15 @@
+/* Strona główna – index.html */
+.home-intro {
+    background: #12355b;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+/* nagłówek wewnątrz intro musi być jasny, bo base.css ustawia ciemne h1 */
+.home-intro h1 {
+    color: #ffffff;
+}
+
+.home-cards {
+    /* miejsce na style kart – tło/kolor kart ustala .card w base.css (pakiet 6) */
+}
