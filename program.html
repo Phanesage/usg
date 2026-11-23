@@ -4,94 +4,78 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kompleksowe Badanie Moszny - program</title>
-        <style>
-        body {
-            background-image: url('images.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-
-        .teczowy-tekst {
-            display: inline-block;
-            font-weight: bold;
-            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
-            background-size: 200% auto;
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            animation: tecza 3s linear infinite;
-        }
-
-        @keyframes tecza {
-            to {
-                background-position: 200% center;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="program.css">
 </head>
 <body>
-    <header><h1>Kompleksowe Badanie Moszny</h1></header>
-    <nav aria-label="Główna"> </nav>
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Godzina</th>
-                    <th>Atrakcja</th>
-                    <th>Miejsce</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>10:00</td>
-                    <td>Badanie wstępne</td>
-                    <td>Gabinet 1</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td>USG</td>
-                    <td>Gabinet 7w</td>
-                </tr>
-                <tr>
-                    <td>13:00</td>
-                    <td>Konsultacja wyników</td>
-                    <td>Gabinet 21w</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Prowadzący:</h3>
-        <article class="teczowy-tekst">
-            Prowadzący mgr.GSI
-        </article>
-            <h3>Drużyny:</h3>
-         <article>
-            Drużyna: Skrętu przyczepka
-        </article>
-         <article>
-            Drużyna: Raka jąder
-        </article>
-
-        <figure>
-             <img src="strefa.svg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
-            <figcaption>Karta Głowicy</figcaption>
-        </figure>
-
-        <figure>
-            <img src="scena.svg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
-            <figcaption>Karta Przyczepka</figcaption>
-        </figure>
-
-        <figure>
-            <img src="warsztat.svg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
-            <figcaption>Karta Raka</figcaption>
-        </figure>
-        <br>
+    <header>
+        <h1>Kompleksowe Badanie Moszny</h1>
+    </header>
+    <nav aria-label="Główna">
         <a href="index.html">GŁÓWNA</a>
         <a href="info.html">INFO</a>
+    </nav>
+    <main>
+        <section class="program-intro">
+            <h2>Harmonogram wydarzenia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Godzina</th>
+                        <th>Atrakcja</th>
+                        <th>Miejsce</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10:00</td>
+                        <td>Badanie wstępne</td>
+                        <td>Gabinet 1</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>USG</td>
+                        <td>Gabinet 7w</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>Konsultacja wyników</td>
+                        <td>Gabinet 21w</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="program-cards">
+            <h2>Prowadzący:</h2>
+            <article class="card teczowy-tekst">
+                Prowadzący mgr.GSI
+            </article>
+
+            <h2>Drużyny:</h2>
+            <article class="card">
+                Drużyna: Skrętu przyczepka
+            </article>
+            <article class="card">
+                Drużyna: Raka jąder
+            </article>
+        </section>
+
+        <section class="program-gallery">
+            <figure>
+                <img src="strefa.svg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
+                <figcaption>Karta Głowicy</figcaption>
+            </figure>
+
+            <figure>
+                <img src="scena.svg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
+                <figcaption>Karta Przyczepka</figcaption>
+            </figure>
+
+            <figure>
+                <img src="warsztat.svg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
+                <figcaption>Karta Raka</figcaption>
+            </figure>
+        </section>
     </main>
 </body>
 </html>
