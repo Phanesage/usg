@@ -23,3 +23,11 @@ body {
                 background-position: 200% center;
             }
         }
+        .program-intro {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+}

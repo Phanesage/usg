@@ -1,0 +1,22 @@
+.info-intro{
+    color: blue red green purple cyan yellow;
+    background-color:grey;
+    font-style:Comic;
+    animation: zmiana-koloru 3s infinite;
+}
+
+.info-karty{
+    color:blue red green purple cyan yellow;
+    background-color:azure;
+    font-style:Comic;
+    animation: zmiana-koloru 3s infinite;
+}
+
+@keyframes zmiana-koloru {
+    0% {color: red;}
+    20% {color: purple;}
+    40% {color: blue;}
+    60% {color: cyan;}
+    80% {color: green;}
+    100% {color: yellow;}
+}
