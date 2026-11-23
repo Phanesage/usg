@@ -1,0 +1,25 @@
+body {
+            background-image: url('images.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .teczowy-tekst {
+            display: inline-block;
+            font-weight: bold;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: tecza 3s linear infinite;
+        }
+
+        @keyframes tecza {
+            to {
+                background-position: 200% center;
+            }
+        }
