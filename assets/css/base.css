@@ -16,6 +16,15 @@ a {
     text-underline-offset: 0.15em;
 }
 
+<<<<<<< HEAD
+/* ===== TREŚĆ ===== */
+.karta{
+    color:aquamarine;
+}
+
+.podpis{
+    color:bisque;
+=======
 a:hover,
 a:focus-visible {
     color: #0d2f5c;
@@ -35,4 +44,5 @@ a[aria-current="page"] {
     padding: 1.25rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(32, 43, 60, 0.05);
+>>>>>>> 5710b5a37411ffab4aa1066d516577082f390f82
 }
