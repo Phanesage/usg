@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="base.css">
         <style>
         body {
-            background-image: url('images.jpg');
+            background-image: url('miod.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -18,9 +18,12 @@
     font-weight: bold;
     animation: zmiana-koloru 3s infinite;
     }
+    .zmkolor {
+    font-weight: bold;
+    animation: zmiana-koloru 3s infinite;
+    }
 
     .program-intro {
-    background-color: chocolate;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,7 +44,23 @@
     66%  { color: green; }
     100% { color: red; }
 }
-
+@keyframes zmkolor {
+    0%   { color: red; }
+    33%  { color: orange; }
+    66%  { color: chocolate; }
+    100% { color: magenta; }
+}
+ table{
+    background-color: chocolate;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 5px;
+    border: 2px solid black;
+ }
+ img{
+    border-radius: 10px;
+    border: 5px dashed black;
+ }
     </style>
 </head>
 <body>
@@ -53,7 +72,7 @@
         <a href="info.html">INFO</a>
     </nav>
     <main>
-        <section class="program-intro" class="ramka">
+        <section class="program-intro">
             <h2>Harmonogram wydarzenia</h2>
             <table>
                 <thead>
@@ -83,7 +102,7 @@
             </table>
         </section>
 
-        <section class="program-cards">
+        <section class="program-cards" classl="sekcjap">
             <h2>Prowadzący:</h2>
             <article class="card teczowy-tekst">
                 Prowadzący mgr.GSI
@@ -100,18 +119,18 @@
 
         <section class="program-gallery">
             <figure>
-                <img src="głowica.jpg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
-                <figcaption>Karta Głowicy</figcaption>
+                <img src="głowica.jpg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy" width="400" height="300">
+                <figcaption class="zmkolor"><h2>Karta Głowicy</h2></figcaption>
             </figure>
 
             <figure>
-                <img src="przyczepek.jpg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
-                <figcaption>Karta Przyczepka</figcaption>
+                <img src="przyczepek.jpg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy" width="400" height="300">
+                <figcaption class="zmkolor"><h2>Karta Przyczepka</h2></figcaption>
             </figure>
 
             <figure>
-                <img src="rak.jpg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy">
-                <figcaption>Karta Raka</figcaption>
+                <img src="rak.jpg" alt="karta pierwsza trójkąty i kwadraty" loading="lazy" width="400" height="300">
+                <figcaption class="zmkolor"><h2>Karta Raka</h2></figcaption>
             </figure>
         </section>
     </main>
